@@ -3,9 +3,9 @@
 Para correr este proyecto es necesario:
 
 Instalar los paquetes:
-### `npm start`
+### `npm install`
 
-Ubicarse en la terminal dentro de la carpeta y ejecutar el comando:
+Ubicarse en la terminal dentro de la carpeta 'exportar productos firebase' y ejecutar el comando:
 
 ### `node json-to-firestore.js`
 
