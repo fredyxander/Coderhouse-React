@@ -2,17 +2,17 @@
 
 Para correr este proyecto es necesario:
 
-Instalar los paquetes:
+1. Instalar los paquetes:
 ### `npm install`
 
-Agregar su arreglo de productos en el archivo 'baseDeDatos.js'
+2. Agregar su arreglo de productos en el archivo **'baseDeDatos.js'**
 #### `Importante remover los campos de id`
 
-En el archivo 'json-to-firestore.js', modificar la variable firebaseConfig linea #9 con sus credenciales
+3. En el archivo 'json-to-firestore.js', modificar la variable **firebaseConfig** linea #9 con sus credenciales
 
-En el archvio 'json-to-firestore.js', en la linea #31, modificar el objeto newProduct con los mismo nombres de sus campos
+4. En el archvio 'json-to-firestore.js', en la linea #31, modificar el objeto **newProduct** con los mismo nombres de sus campos
 
-Ubicarse en la terminal dentro de la carpeta 'exportar productos firebase' y ejecutar el comando:
+5. Ubicarse en la terminal dentro de la carpeta *'exportar productos firebase'* y ejecutar el comando:
 
 ### `node json-to-firestore.js`
 
