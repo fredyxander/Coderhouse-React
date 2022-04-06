@@ -1,7 +1,7 @@
 import './Item.css';
 import {Link} from 'react-router-dom';
 
-export const Item = ({item})=>{
+export const Item = ({item, cursoProp2})=>{
     return(
         <div className="tarjeta-producto">
             <img src={item.pictureUrl} alt={item.title}/>

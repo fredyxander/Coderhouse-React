@@ -10,7 +10,7 @@ export const Cart = ()=>{
 
     return(
         <div>
-            <p>cart container</p>
+            <p>cart container {carritoContext.nombreUsuario}</p>
             {
                 productosCarrito.length>0 ?
                 <>

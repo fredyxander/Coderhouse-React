@@ -3,6 +3,7 @@ import { CartContext } from "./CartContext";
 
 export const CustomCartContext = ({children})=>{
     const [productosCarrito, setProductosCarrito] = useState([]);
+    const nombreUsuario = "pepito";
 
     // agregar cierta cantidad de un ítem al carrito
     const addItem = (item, quantity)=>{
@@ -12,6 +13,7 @@ export const CustomCartContext = ({children})=>{
             //buscamos la posicion del producto dentro del arreglo.
             const productIndex = newProducts.findIndex(prod=>prod.item.id === item.id);
             //index del producto
+            // newProducts[3]
             console.log(newProducts[productIndex]);
             newProducts[productIndex].quantity = newProducts[productIndex].quantity + quantity;
             //cantidad actualizada del producto que se repite
@@ -53,12 +55,12 @@ export const CustomCartContext = ({children})=>{
     }
 
     const getTotalPrice = ()=>{
-        const totalPrice = productosCarrito.reduce((acc,prod)=>acc+(prod.quantity*prod.item.price),0)
+        const totalPrice = productosCarrito.reduce((acc,obj)=>acc+(obj.quantity*obj.item.price),0)
         return totalPrice;
     }
 
     return(
-        <CartContext.Provider value={{productosCarrito, addItem, removeItem, clear, getTotalCount, getTotalPrice}}>
+        <CartContext.Provider value={{productosCarrito, addItem, removeItem, clear, getTotalCount, getTotalPrice, nombreUsuario}}>
             {children}
         </CartContext.Provider>
     )

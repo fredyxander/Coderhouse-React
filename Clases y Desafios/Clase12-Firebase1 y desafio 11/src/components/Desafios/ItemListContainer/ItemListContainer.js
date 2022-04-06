@@ -18,6 +18,7 @@ export const estilosItemListContainer = {
 export const ItemListContainer = ()=>{
     const {id} = useParams();
     const [productos, setProductos] = useState([]);
+    const curso = "react";
 
     const promesa = new Promise((resolve, reject)=>{
         setTimeout(() => {
@@ -42,7 +43,7 @@ export const ItemListContainer = ()=>{
     return(
         <div style={estilosItemListContainer}>
             <p>item list container</p>
-            <ItemList items={productos}/>
+            <ItemList items={productos} cursoProp={curso}/>
         </div>
     )
 }
