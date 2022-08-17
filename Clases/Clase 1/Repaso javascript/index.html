@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //redeclaracion variables
+        var curso = "react";
+        // ...
+        // ...
+        // ...
+        var curso = "nodejs";
+        console.log(curso);
+        //con let ya no se peude redeclarar
+        // let clase = "clase2";
+        // let clase = "clase1";
+
+        //funciones y variables
+        // function miFuncion(){
+        //     if(true){
+        //         if(true){
+        //             var animal = "gato";
+        //             console.log('1. ', animal);
+        //         }
+        //         console.log('2. ', animal);
+        //     }
+        // }
+        // miFuncion();
+        // console.log('3.', animal)
+
+        //funciones let y const
+        // function miFuncion(){
+        //     if(true){
+        //         if(true){
+        //             let animal = "gato";
+        //             console.log('1. ', animal);
+        //         }
+        //         console.log('2. ', animal);
+        //     }
+        // }
+        // miFuncion();
+        // console.log('3.', animal)
+
+        //arrow function
+        function classicFunction(nombre, apellido){
+            return 'soy ' + nombre + apellido;
+        }
+        console.log(classicFunction('pepe', 'caceres'));
+
+        const funcionFlecha = (nombre)=>{
+            return 'soy ' + nombre;
+        }
+        console.log(funcionFlecha('Andres'));
+        const nuevaFuncion = nombre => 'soy ' + nombre;
+        console.log(nuevaFuncion('Laura'));
+
+        //template strings
+        const nombre = "Andrea";
+        const apellido = "Ferrera";
+        const frase1 = "soy " + nombre + ' ' + apellido;
+        console.log(frase1)
+        const frase2 = `soy ${nombre} ${apellido} y tengo ${15+18} años`;
+        console.log(frase2)
+    </script>
+</body>
+</html>

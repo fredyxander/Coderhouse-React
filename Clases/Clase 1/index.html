@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title> Añadiendo elementos de forma dinámica con nodos de texto </title>
+</head>
+<body>
+    <div id="nodo-texto"></div>
+    <script type="application/javascript">
+        var elemento = document.createElement("H1") // Creamos un elemento del tipo h1
+        var texto = document.createTextNode("Este es un texto creado a través de un nodo de texto"); // Creamos un texto con un nodo de texto
+        elemento.appendChild(texto); // Agregamos el nodo de texto al elemento
+        document.getElementById('nodo-texto').appendChild(elemento) // Para podemos mostrarlo en el DOM lo seleccionamos el div donde lo queremos introducir y le pasamos como hijo el h1
+    </script>
+</body>
+</html>
