@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome/Welcome';
 import Hola from './components/Hola/Hola';
@@ -8,8 +7,7 @@ import mario from './assets/mario.png';
 function App() {
   return (
     <div className="App">
-      <img src={mario}/>
-      {/* <header className="App-header">
+      <header className="App-header">
         <Welcome titulo="Curso de React" comision="41590" color="red"></Welcome>
         <Welcome titulo="Curso de Javascript" comision="10200" color="blue"></Welcome>
         <Hola curso="Html"></Hola>
@@ -22,7 +20,8 @@ function App() {
         </Alerta>
         <Alerta mensaje="Aceptar los terminos">
         </Alerta>
-      </header> */}
+        <img src={mario} className="image-example" alt=''/>
+      </header>
     </div>
   );
 }
