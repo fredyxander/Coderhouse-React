@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.imagen-size{
+    width:80%
+}
