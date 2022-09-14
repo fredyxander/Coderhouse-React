@@ -1,0 +1,15 @@
+{
+  "name": "exportar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "json-to-firestore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node json-to-firestore.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.6.10"
+  }
+}
